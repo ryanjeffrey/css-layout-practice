@@ -1,35 +1,28 @@
 :root {
-    --background: rgb(224, 234, 247);
+    --background: #f4efde;
     --header-background: white;
-    --footer-background: rgb(243, 242, 242);
 }
 
-body {
-    height: 100vh;
-    font-family: 'Rubik', san-serif;
+body, html {
+    height: 100%;
+    width: 100%;
     background: var(--background);
+}
+
+.container {
+    height: 100%;
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 9% 80% 11%;
+    border: solid 10px black;
 }
 
 header {
-    position: sticky;
-    top: 0;
     display: flex;
-    align-items: center;
+    align-items: left;
     background-color: var(--header-background);
-}
-
-main {
-    padding: 20px;
+    border-bottom: solid 10px black;
 }
 
 footer {
-    position: sticky;
-    bottom: 0;
-    padding: 7px 20px;
-    font-size: .8em;
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--footer-background);
+    border-top: solid 10px black;
 }
