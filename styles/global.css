@@ -9,6 +9,13 @@ body, html {
     background: var(--background);
 }
 
+img {
+    max-width: 100% !important;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+}
+
 .container {
     height: 100%;
     display: grid;
