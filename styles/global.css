@@ -23,6 +23,117 @@ header {
     border-bottom: solid 10px black;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+main .left {
+    border-right: solid 5px black;
+}
+main .right {
+    border-left: solid 5px black;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.left {
+    display: grid;
+    grid-template-rows: 30% 70%;
+}
+
+.top-left {
+    display: grid;
+    /* grid-template-columns: 50% 50%; */
+    border-right: solid 5px black;
+    background-color: var(--header-background);
+}
+
+.top-right {
+    display: grid;
+    /* grid-template-columns: 50% 50%; */
+    border-left: solid 5px black;
+}
+
+.bottom {
+    display: flex;
+    border-top: solid 10px black;
+}
+
+.arrow-buttons {
+    display: flex;
+    justify-content: end;
+}
+
+.right {
+    display: grid;
+    grid-template-rows: 57% 43%;
+}
+
+.book, .author {
+    border-bottom: solid 10px black;
+}
+
+.bottom-right {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.bottom-right .synopsis {
+    border-right: solid 5px black;
+}
+
+.links {
+    border-left: solid 5px black;
+    display: grid;
+    grid-template-rows: 58% 42%;
+}
+
+.social-and-shop {
+    display: grid;
+    grid-template-columns: 53% 47%;
+}
+
+.social {
+    border-right: solid 5px black;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    background-color: var(--header-background);
+}
+
+.social-top, .social-bottom {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.social-top {
+    border-bottom: solid 5px black;
+}
+.social-bottom {
+    border-top: solid 5px black;
+}
+
+.social-top-left, .social-bottom-left {
+    border-right: solid 5px black;
+}
+.social-top-right, .social-bottom-right {
+    border-left: solid 5px black;
+}
+
+.shop {
+    border-left: solid 5px black;
+}
+
 footer {
     border-top: solid 10px black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+footer .left {
+    border-right: solid 5px black;
+}
+footer .right {
+    border-left: solid 5px black;
 }
